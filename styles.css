@@ -1,0 +1,20 @@
+.cp-name-mapper-summary {
+    margin-top: 20px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cp-name-mapper-summary strong {
+    color: #495057;
+    font-weight: 600;
+}
+
+.cp-name-mapper-summary br + * {
+    margin-left: 10px;
+    color: #6c757d;
+    font-family: monospace;
+}

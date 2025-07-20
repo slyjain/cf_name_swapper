@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "CP Name Mapper",
+    "version": "1.0",
+    "description": "Replace character names in CP problems based on custom mappings.",
+    "permissions": ["scripting", "activeTab", "storage"],
+    "host_permissions": ["*://codeforces.com/*"],
+    "content_scripts": [
+        {
+            "matches": ["*://codeforces.com/problemset/*", "*://codeforces.com/contest/*"],
+            "js": ["content.js"],
+            "css": ["styles.css"]
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "service_worker": "background.js"
+    }
+}
